@@ -1,0 +1,26 @@
+﻿<Window x:Class="AbsenMg.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AbsenMg"
+        mc:Ignorable="d"
+        Title="Login" Height="450" Width="800" AllowsTransparency="True" WindowStyle="None" WindowStartupLocation="CenterScreen">
+  <Grid Height="500" Width="800" VerticalAlignment="Center" UseLayoutRounding="False" ScrollViewer.HorizontalScrollBarVisibility="Auto" ScrollViewer.VerticalScrollBarVisibility="Auto" MouseLeftButtonDown="Grid_MouseLeftButtonDown">
+    <TextBlock HorizontalAlignment="Left" Height="36" Margin="36,46.667,0,0" TextWrapping="Wrap" Text="Bienvenue " VerticalAlignment="Top" Width="150" FontSize="20" FontWeight="Bold"/>
+    <TextBlock HorizontalAlignment="Left" Height="36" Margin="36,46.667,0,0" TextWrapping="Wrap" Text="Bienvenue " VerticalAlignment="Top" Width="150" FontSize="20" FontWeight="Bold"/>
+    <TextBlock HorizontalAlignment="Left" Height="36" Margin="93,82.667,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="204"><Run FontWeight="Bold" FontSize="16" Text="Log in "/><Run FontWeight="Bold" FontSize="16" Text="to "/><Run FontWeight="Bold" FontSize="16" Text="your Account"/><LineBreak/><Run/></TextBlock>
+    <TextBlock HorizontalAlignment="Left" Height="53" Margin="36,118.667,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="283" TextDecorations="{x:Null}"><Run Text="log in to your account "/><Run Text="using your username and password given by administration"/></TextBlock>
+    <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
+    <TextBlock HorizontalAlignment="Left" Height="27" Margin="46,171.667,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="251" FontWeight="Bold" FontSize="16"><Run Text="Username"/><LineBreak/><Run/></TextBlock>
+    <TextBlock HorizontalAlignment="Left" Margin="46,238.667,0,0" TextWrapping="Wrap" Text="Password" VerticalAlignment="Top" Height="23.96" Width="261" FontWeight="Bold" FontSize="16"/>
+    <Button x:Name="loginBtn" Content="Log in " HorizontalAlignment="Left" Margin="46,311,0,0" VerticalAlignment="Top" Width="261" Height="28" Background="#FF6578ED" FontWeight="Thin" FontSize="16" Click="loginBtn_Click"/>
+    <Label Content="Label" HorizontalAlignment="Left" Margin="358,23.867,0,0" VerticalAlignment="Top" Height="453.76" Width="442">
+      <Label.Background>
+        <ImageBrush ImageSource="AD.jpg" Stretch="UniformToFill"/>
+      </Label.Background>
+    </Label>
+    <TextBox x:Name="userPass" HorizontalAlignment="Left" Height="25" Margin="46,268,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="261"/>
+    <TextBox x:Name="userName" HorizontalAlignment="Left" Height="25" Margin="46,204,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="261"/>
+  </Grid>
+</Window>
